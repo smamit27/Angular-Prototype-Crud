@@ -1,11 +1,11 @@
 function myController($http) {
-    var self = this;
-    myController.prototype.self = self;
+        var self = this;
+        myController.prototype.self = self;
      //Get Json From Json File//    
     $http.get("assets/cart.json").then((response) =>{
         self.getPortalData =  response.data.productsInCart;
     });
-    self.addOpen = true;
+    self.addOpen = true; 
 
    };
    //Add Functionality //
@@ -52,3 +52,60 @@ function myController($http) {
 
 
 angular.module('Example', []).controller('MyController', myController);
+
+
+
+
+// function myController($http) {
+//    var self = this;
+//     //myController.prototype.self = self;
+//      //Get Json From Json File//    
+//     $http.get("assets/cart.json").then(function(response){
+//         self.getPortalData =  response.data.productsInCart;
+//     });
+//     this.addOpen = true;
+
+//    };
+//    //Add Functionality //
+   
+//      myController.prototype.addItem = function(data){  
+//          //var self = myController.prototype.self;         
+//          this.getPortalData.push(data);
+//          this.current = {};
+//          this.zeroLength = false;
+
+//     }
+//    //Delete Functionality//
+//    myController.prototype.remove = function (data){
+//        //var self = myController.prototype.self;
+//        var index = this.getPortalData.indexOf(data);
+//        this.getPortalData.splice(index,1);
+//         if( this.getPortalData.length == 0){
+//             this.zeroLength = true;
+//              this.current = {};
+//              this.editOpen = false;
+//              this.addOpen = true; 
+
+
+//         }       
+//     }
+    
+//     //Edit Functionality// 
+//      myController.prototype.edit = function(data) {
+//         //var self = myController.prototype.self;
+//         this.current = data;
+//         this.editOpen = true;
+//         this.addOpen = false; 
+
+//     }
+//      //Save Functionality// 
+//      myController.prototype.save = function(){
+//       //var self = myController.prototype.self;
+//        this.current = {};
+//        this.addOpen = true;
+//        this.editOpen = false;
+//     }
+    
+
+
+// angular.module('Example', []).controller('MyController', myController);
