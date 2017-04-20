@@ -1,11 +1,11 @@
 function myController($http) {
-        var self = this;
-        myController.prototype.self = self;
+    var self = this;
+    myController.prototype.self = self;
      //Get Json From Json File//    
     $http.get("assets/cart.json").then((response) =>{
         self.getPortalData =  response.data.productsInCart;
     });
-    self.addOpen = true; 
+    self.addOpen = true;
 
    };
    //Add Functionality //
