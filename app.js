@@ -13,7 +13,7 @@ function myController($http) {
      myController.prototype.addItem = (data) =>{  
          var self = myController.prototype.self;         
          self.getPortalData.push(data);
-         self.current = {};
+         self.current = '';
          self.zeroLength = false;
 
     }

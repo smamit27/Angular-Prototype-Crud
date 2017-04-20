@@ -48,11 +48,11 @@
 </section>
 <footer>
 	<form name="portalForm">
-		<input type="text"  placeholder ="Other Formats " class="maxWidth" ng-model="current.otherFormat" required> 
-		<input type="text"  placeholder ="Price "  ng-model="current.price" required>
-		<input type="text"  placeholder ="New From "  ng-model="current.newForm" required>
-		<input type="text"   placeholder ="Used From"  ng-model="current.usedFrom" required> 
-		<button type="button" class="button" ng-click = "$ctrl.addItem(current)" ng-hide="$ctrl.editOpen" ng-disabled="portalForm.$invalid" ng-class="{'diabled-class':portalForm.$invalid,'enable-class':!portalForm.$invalid}">Add New Rows</button>
+		<input type="text"  placeholder ="Other Formats " class="maxWidth" ng-model="$ctrl.current.otherFormat" required> 
+		<input type="text"  placeholder ="Price "  ng-model="$ctrl.current.price" required>
+		<input type="text"  placeholder ="New From "  ng-model="$ctrl.current.newForm" required>
+		<input type="text"   placeholder ="Used From"  ng-model="$ctrl.current.usedFrom" required> 
+		<button type="button" class="button" ng-click = "$ctrl.addItem($ctrl.current)" ng-hide="$ctrl.editOpen" ng-disabled="portalForm.$invalid" ng-class="{'diabled-class':portalForm.$invalid,'enable-class':!portalForm.$invalid}">Add New Rows</button>
 		<button type="button" class="button"  ng-click = "$ctrl.save(current)" ng-hide="$ctrl.addOpen">Save  Details</button>
 
 	</form>
