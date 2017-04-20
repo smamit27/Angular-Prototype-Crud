@@ -1,0 +1,32 @@
+{  
+   "productsInCart":[  
+      {  
+         "id":"1",
+         "otherFormat":"Hardcover",
+         "newForm":"R 334.99",
+         "price":"R 300.00",
+         "usedFrom":"R 269.99"
+      },
+      {  
+         "id":"2",
+         "otherFormat":"Paperback",
+         "newForm":"R 169.99",
+         "price":"R 150.00",
+         "usedFrom":"R 119.99"
+      },
+      {  
+         "id":"3",
+         "otherFormat":"Audio, CD, Audiobook, Unabridged",
+         "newForm":"R 80",
+         "price":"R 89",
+         "usedFrom":"R 60"
+      },
+      {  
+         "id":"4",
+         "otherFormat":"Unknown Binding",
+         "newForm":"R 50",
+         "price":"R 50",
+         "usedFrom":"R 50"
+      }
+   ]
+}
